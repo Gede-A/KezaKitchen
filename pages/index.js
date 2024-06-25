@@ -41,11 +41,11 @@ export default function Home() {
                                 className="text-center mx-auto"
                                 type="default"
                             >
-                                Simplify Your Nutrition Journey with NutriTrack
+                                Simplify Your Nutrition Journey with KezaKitchen
                             </PageTitle>
                             <Content className="text-center" alignment="center">
                                 <p>
-                                    Hey there! Welcome to NutriTrack, the
+                                    Hey there! Welcome to KezaKitchen, the
                                     ultimate nutrition meal planner powered by
                                     Notion. We&apos;ve got some awesome features
                                     lined up to make your nutrition journey a
@@ -115,7 +115,7 @@ export default function Home() {
                                         <p>
                                             Celebrate your wins and stay
                                             motivated on your nutrition journey.
-                                            NutriTrack allows you to monitor
+                                            KezaKitchen allows you to monitor
                                             your progress with weight,
                                             measurements, and other key metrics.
                                             Track your improvements over time
@@ -127,6 +127,8 @@ export default function Home() {
                             </CardGroup>
                         </SectionContainer>
                     </MotionBTTContainer>
+
+                    
                     {/* Testimonials */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
@@ -135,14 +137,31 @@ export default function Home() {
                             id="testimonials"
                             className="benefits"
                         >
-                            <BadgeGroup alignment="left">
-                                <BadgeMessage>Testimonials</BadgeMessage>
-                                <BadgeIcon icon="twemoji:waving-hand" />
-                            </BadgeGroup>
-                            <PageTitle className="" type="default">
-                                This is what our customers have to say about
-                                this template
-                            </PageTitle>
+                            <div className="flex items-center">
+                                <CardImage
+                                    src="/image.png"
+                                    alt="Progress Tracking
+                                    image used."
+                                />
+                                <div>
+                                    <BadgeGroup alignment="left">
+                                        <BadgeMessage>
+                                            JOIN, IT'S FREE
+                                        </BadgeMessage>
+                                    </BadgeGroup>
+                                    <PageTitle className="" type="default">
+                                        We're not reinventing the taco.
+                                    </PageTitle>
+                                    <Content
+                                        className="text-center"
+                                        alignment="center"
+                                    >
+                                        <p>
+                                            But we are reinventing how much money you can earn when you and your freinds eat one. lots of campanies do cash back, no one does it like us.
+                                        </p>
+                                    </Content>
+                                </div>
+                            </div>
                             <Columns />
                         </SectionContainer>
                     </MotionBTTContainer>

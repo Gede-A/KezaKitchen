@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { SectionContainer } from "@components/Section";
 import { Nav } from "@components/Nav";
 import { ButtonGroup, Button } from "@components/Button";
@@ -29,14 +29,14 @@ export const Header = () => {
                 <SectionContainer className="flex items-center ml-auto">
                     <Nav />
                     <ButtonGroup className="hidden md:block">
-                        <a
+                        {/* <a
                             role="button"
                             href="https://github.com/christian-luntok/nutritrack"
                             className="btn btn--secondary ml-4"
                         >
                             Get Template
                             <Icon icon="material-symbols:arrow-forward-rounded" />
-                        </a>
+                        </a> */}
                     </ButtonGroup>
                 </SectionContainer>
             </SectionContainer>

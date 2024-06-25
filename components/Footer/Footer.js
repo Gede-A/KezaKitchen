@@ -1,6 +1,6 @@
 import { SectionContainer } from "@components/Section";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { ButtonGroup } from "@components/Button";
 import { Icon } from "@iconify/react";
 
@@ -27,23 +27,23 @@ const DATA = [
         items: [
             {
                 label: "About",
-                href: "https://github.com/christian-luntok/",
-                target: "_blank"
+                href: "#",
+                // target: "_blank"
             },
             {
                 label: "Twitter",
-                href: "https://github.com/christian-luntok/",
-                target: "_blank"
+                href: "#",
+                // target: "_blank"
             },
             {
                 label: "Instagram",
-                href: "https://github.com/christian-luntok/",
-                target: "_blank"
+                href: "#",
+                // target: "_blank"
             },
             {
                 label: "Facebook",
-                href: "https://github.com/christian-luntok/",
-                target: "_blank"
+                href: "#",
+                // target: "_blank"
             }
         ]
     }
@@ -73,14 +73,14 @@ export const Footer = () => {
                                 </Link>
                                 {/* Get Template button; remove if not used */}
                                 <ButtonGroup alignment="left">
-                                    <a
+                                    {/* <a
                                         role="button"
                                         href="https://github.com/christian-luntok/nutritrack"
                                         className="btn btn--secondary"
                                     >
                                         Get Template
                                         <Icon icon="material-symbols:arrow-forward-rounded" />
-                                    </a>
+                                    </a> */}
                                 </ButtonGroup>
                             </div>
                         </div>
@@ -127,8 +127,8 @@ export const Footer = () => {
             <SectionContainer className="footer-credits relative z-10">
                 <div className="wrap wrap-px py-6">
                     <p className="my-0">
-                        © {year} Nutritrack. All rights reserved{" - "}
-                        <span className="font-normal">
+                        © {year} KezaKitchen. All rights reserved{" - "}
+                        {/* <span className="font-normal">
                             A template by{" "}
                             <Link
                                 className="transition-colors duration-300 hover:underline"
@@ -137,7 +137,7 @@ export const Footer = () => {
                             >
                                 chrstnl.
                             </Link>
-                        </span>
+                        </span> */}
                     </p>
                 </div>
             </SectionContainer>

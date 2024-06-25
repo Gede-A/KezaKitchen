@@ -5,7 +5,7 @@ import { MotionBTTContainer, MotionInfiniteImage } from "@components/Motion";
 import { SectionContainer } from "@components/Section";
 import { PageTitle } from "@components/Title";
 import { Icon } from "@iconify/react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const HomeBanner = () => {
     return (
