@@ -149,7 +149,9 @@ export default function Home() {
                                     alignment="left"
                                     className="flex-none"
                                 >
-                                    <BadgeMessage>JOIN, IT'S FREE</BadgeMessage>
+                                    <BadgeMessage>
+                                        JOIN, IT&apos;S FREE
+                                    </BadgeMessage>
                                 </BadgeGroup>
                                 <PageTitle className="" type="default">
                                     We&apos;re not reinventing the taco
