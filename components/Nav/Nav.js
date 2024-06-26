@@ -11,7 +11,7 @@ const navigation = [
         name: "Contact",
         href: "#",
         isArrow: true,
-        target: "_blank"
+        // target: "_blank"
     }
 ];
 

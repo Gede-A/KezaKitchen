@@ -6,7 +6,7 @@
     "private": true,
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/christian-luntok/nutritrack.git"
+        "url": "https://github.com/Gede-A/KezaKitchen.git"
     },
     "keywords": [
         "next",
@@ -35,7 +35,7 @@
         "eslint-config-next": "13.1.2",
         "framer-motion": "^10.11.2",
         "micro-cors": "^0.1.1",
-        "next": "^13.1.2",
+        "next": "^13.5.0",
         "next-secure-headers": "^2.2.0",
         "next-seo": "^5.15.0",
         "next-sitemap": "^3.1.44",
