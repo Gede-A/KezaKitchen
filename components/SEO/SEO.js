@@ -1,14 +1,15 @@
 import Head from "next/head";
 
 const SEO = ({ title, description, keywords }) => {
-    // Customize Meta Properties
-    const metaDescription = description || process.env.siteDescription;
-    const metaKeywords = keywords || process.env.siteKeywords;
-    const siteURL = process.env.siteUrl;
-    const twitterHandle = process.env.twitterHandle;
-    const imagePreview = `${siteURL}/${process.env.siteImagePreviewUrl}`;
+    const metaDescription =
+        description || process.env.NEXT_PUBLIC_SITE_DESCRIPTION;
+    const metaKeywords = keywords || process.env.NEXT_PUBLIC_SITE_KEYWORDS;
+    const siteURL = process.env.NEXT_PUBLIC_SITE_URL;
+    const twitterHandle = process.env.NEXT_PUBLIC_TWITTER_HANDLE;
+    const imagePreview = process.env.NEXT_PUBLIC_SITE_IMAGE_PREVIEW_URL
+        ? `${siteURL}/${process.env.NEXT_PUBLIC_SITE_IMAGE_PREVIEW_URL}`
+        : null;
 
-    // Set default title or use provided title
     const pageTitle = title
         ? `${title} - KezaKitchen`
         : "KezaKitchen - A landing page";
@@ -16,7 +17,7 @@ const SEO = ({ title, description, keywords }) => {
     return (
         <Head>
             <meta charSet="utf-8" />
-            <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+            <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1.0"
@@ -38,14 +39,20 @@ const SEO = ({ title, description, keywords }) => {
 
             {/* Open Graph */}
             <meta property="og:url" content={siteURL} key="ogurl" />
-            <meta property="og:image" content={imagePreview} key="ogimage" />
-            <meta property="og:site_name" content={siteURL} key="ogsitename" />
             <meta property="og:title" content={pageTitle} key="ogtitle" />
             <meta
                 property="og:description"
                 content={metaDescription}
                 key="ogdesc"
             />
+            {imagePreview && (
+                <meta
+                    property="og:image"
+                    content={imagePreview}
+                    key="ogimage"
+                />
+            )}
+            <meta property="og:site_name" content={siteURL} key="ogsitename" />
 
             {/* Favicons and App Icons */}
             <link
