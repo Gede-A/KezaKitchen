@@ -1,15 +1,17 @@
 import Head from "next/head";
 
 const SEO = ({ title, description, keywords }) => {
-    // Cuztomize Meta Properties
-    // Can create extra props and pass as arguments like title in case you want to change for each page.
-    const metaDescription = description
-        ? description
-        : process.env.siteDescription;
-    const metaKeywords = keywords ? keywords : process.env.siteKeywords;
+    // Customize Meta Properties
+    const metaDescription = description || process.env.siteDescription;
+    const metaKeywords = keywords || process.env.siteKeywords;
     const siteURL = process.env.siteUrl;
     const twitterHandle = process.env.twitterHandle;
     const imagePreview = `${siteURL}/${process.env.siteImagePreviewUrl}`;
+
+    // Set default title or use provided title
+    const pageTitle = title
+        ? `${title} - KezaKitchen`
+        : "KezaKitchen - A landing page";
 
     return (
         <Head>
@@ -21,9 +23,10 @@ const SEO = ({ title, description, keywords }) => {
             />
             <meta name="description" content={metaDescription} />
             <meta name="keywords" content={metaKeywords} />
-            {/* { Twitter } */}
+
+            {/* Twitter */}
             <meta
-                name="twitte:card"
+                name="twitter:card"
                 content="summary_large_image"
                 key="twcard"
             />
@@ -33,17 +36,18 @@ const SEO = ({ title, description, keywords }) => {
                 key="twhandle"
             />
 
-            {/* {Open Graph} */}
+            {/* Open Graph */}
             <meta property="og:url" content={siteURL} key="ogurl" />
             <meta property="og:image" content={imagePreview} key="ogimage" />
             <meta property="og:site_name" content={siteURL} key="ogsitename" />
-            <meta property="og:title" content={title} key="ogtitle" />
+            <meta property="og:title" content={pageTitle} key="ogtitle" />
             <meta
                 property="og:description"
                 content={metaDescription}
                 key="ogdesc"
             />
 
+            {/* Favicons and App Icons */}
             <link
                 rel="apple-touch-icon"
                 sizes="180x180"
@@ -67,9 +71,11 @@ const SEO = ({ title, description, keywords }) => {
                 href="/safari-pinned-tab.svg"
                 color="#5bbad5"
             />
-            {/* Title */}
-            <title>{title}</title>
 
+            {/* Title */}
+            <title>{pageTitle}</title>
+
+            {/* Theme Color */}
             <meta name="msapplication-TileColor" content="#da532c" />
             <meta name="theme-color" content="#ffffff" />
         </Head>

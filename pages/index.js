@@ -162,7 +162,6 @@ export default function Home() {
                                     Lots of companies do cash back. No one does
                                     it like us.
                                 </p>
-                                {/* <Columns /> */}
                             </div>
                         </SectionContainer>
                     </MotionBTTContainer>
