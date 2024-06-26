@@ -3,7 +3,7 @@ import { SectionContainer } from "@components/Section";
 import { PageTitle } from "@components/Title";
 import { Layout } from "@components/Layout";
 import { HomeBanner } from "@components/Banner";
-import { Columns } from "@components/Columns";
+// import { Columns } from "@components/Columns";
 import { ContentImage } from "@components/ContentImage";
 import { Content } from "@components/Content";
 import { Accordion } from "@components/Accordion";
@@ -41,11 +41,11 @@ export default function Home() {
                                 className="text-center mx-auto"
                                 type="default"
                             >
-                                Simplify Your Nutrition Journey with KezaKitchen
+                                Simplify Your Nutrition Journey with NutriTrack
                             </PageTitle>
                             <Content className="text-center" alignment="center">
                                 <p>
-                                    Hey there! Welcome to KezaKitchen, the
+                                    Hey there! Welcome to NutriTrack, the
                                     ultimate nutrition meal planner powered by
                                     Notion. We&apos;ve got some awesome features
                                     lined up to make your nutrition journey a
@@ -115,7 +115,7 @@ export default function Home() {
                                         <p>
                                             Celebrate your wins and stay
                                             motivated on your nutrition journey.
-                                            KezaKitchen allows you to monitor
+                                            NutriTrack allows you to monitor
                                             your progress with weight,
                                             measurements, and other key metrics.
                                             Track your improvements over time
@@ -127,44 +127,44 @@ export default function Home() {
                             </CardGroup>
                         </SectionContainer>
                     </MotionBTTContainer>
-
-                    
                     {/* Testimonials */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
+                        className="flex space-x-4" 
                     >
                         <SectionContainer
                             id="testimonials"
-                            className="benefits"
+                            className="benefits flex space-x-4" 
                         >
-                            <div className="flex items-center">
-                                <CardImage
-                                    src="/image.png"
-                                    alt="Progress Tracking
-                                    image used."
-                                />
-                                <div>
-                                    <BadgeGroup alignment="left">
-                                        <BadgeMessage>
-                                            JOIN, IT'S FREE
-                                        </BadgeMessage>
-                                    </BadgeGroup>
-                                    <PageTitle className="" type="default">
-                                        We're not reinventing the taco.
-                                    </PageTitle>
-                                    <Content
-                                        className="text-center"
-                                        alignment="center"
-                                    >
-                                        <p>
-                                            But we are reinventing how much money you can earn when you and your freinds eat one. lots of campanies do cash back, no one does it like us.
-                                        </p>
-                                    </Content>
-                                </div>
+                            <CardImage
+                                src="/image.png"
+                                alt="Progress Tracking image used."
+                                className="flex-none" 
+                            />
+
+                            <div className="flex flex-col space-y-4">
+                                {" "}
+                                {}
+                                <BadgeGroup
+                                    alignment="left"
+                                    className="flex-none"
+                                >
+                                    <BadgeMessage>JOIN, IT'S FREE</BadgeMessage>
+                                </BadgeGroup>
+                                <PageTitle className="" type="default">
+                                    We're not reinventing the taco
+                                </PageTitle>
+                                <p>
+                                    But we are reinventing how much money you
+                                    can earn when you and your friends eat one.
+                                    Lots of companies do cash back. No one does
+                                    it like us.
+                                </p>
+                                {/* <Columns /> */}
                             </div>
-                            <Columns />
                         </SectionContainer>
                     </MotionBTTContainer>
+
                     {/* Accordions */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
