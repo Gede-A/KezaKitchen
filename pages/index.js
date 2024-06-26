@@ -130,21 +130,21 @@ export default function Home() {
                     {/* Testimonials */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
-                        className="flex space-x-4"
+                        className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4"
                     >
                         <SectionContainer
                             id="testimonials"
-                            className="benefits flex space-x-4"
+                            className="benefits flex flex-col md:flex-row md:space-x-4"
                         >
-                            <CardImage
+                            <img
                                 src="/image.png"
+                                srcSet="/image.png 480w, /image.png 768w, /image.png 1024w"
+                                sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1024px"
                                 alt="Progress Tracking image used."
-                                className="flex-none"
+                                className="flex-none w-full md:w-auto"
                             />
 
                             <div className="flex flex-col space-y-4">
-                                {" "}
-                                {}
                                 <BadgeGroup
                                     alignment="left"
                                     className="flex-none"
