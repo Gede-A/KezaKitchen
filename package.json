@@ -17,8 +17,8 @@
         "tailwindcss",
         "tailwind"
     ],
-    "author": "chrstnl",
-    "homepage": "https://chrstnl.com/",
+    "author": "",
+    "homepage": "",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
