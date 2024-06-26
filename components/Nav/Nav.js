@@ -9,8 +9,8 @@ const navigation = [
     { name: "FAQ?", to: "#faq", href: "/#faq" },
     {
         name: "Contact",
-        href: "#",
-        isArrow: true,
+        href: "https://kezakitchen.netlify.app/",
+        isArrow: true
         // target: "_blank"
     }
 ];
