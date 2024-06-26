@@ -130,16 +130,16 @@ export default function Home() {
                     {/* Testimonials */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
-                        className="flex space-x-4" 
+                        className="flex space-x-4"
                     >
                         <SectionContainer
                             id="testimonials"
-                            className="benefits flex space-x-4" 
+                            className="benefits flex space-x-4"
                         >
                             <CardImage
                                 src="/image.png"
                                 alt="Progress Tracking image used."
-                                className="flex-none" 
+                                className="flex-none"
                             />
 
                             <div className="flex flex-col space-y-4">
@@ -152,7 +152,7 @@ export default function Home() {
                                     <BadgeMessage>JOIN, IT'S FREE</BadgeMessage>
                                 </BadgeGroup>
                                 <PageTitle className="" type="default">
-                                    We're not reinventing the taco
+                                    We&apos;re not reinventing the taco
                                 </PageTitle>
                                 <p>
                                     But we are reinventing how much money you
