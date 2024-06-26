@@ -49,7 +49,7 @@ export const HomeBanner = () => {
                 </MotionBTTContainer>
                 {/* Appear Fourth */}
                 <MotionBTTContainer transition={{ delay: 0.8, duration: 0.5 }}>
-                    <div className="page-banner--image">
+                    <div className="page-banner--image flex justify-center">
                         <Image
                             src="/nutritrack-hero-banner.png"
                             width={1024}

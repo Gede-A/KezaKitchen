@@ -66,21 +66,14 @@ export const Footer = () => {
                                         src="/nutritrack.svg"
                                         alt="logo"
                                         className="h-10 w-auto"
-                                        height="25"
-                                        width="100"
+                                        height={25}
+                                        width={100}
                                         priority
+                                        objectFit="contain"
                                     />
                                 </Link>
                                 {/* Get Template button; remove if not used */}
                                 <ButtonGroup alignment="left">
-                                    {/* <a
-                                        role="button"
-                                        href="https://github.com/christian-luntok/nutritrack"
-                                        className="btn btn--secondary"
-                                    >
-                                        Get Template
-                                        <Icon icon="material-symbols:arrow-forward-rounded" />
-                                    </a> */}
                                 </ButtonGroup>
                             </div>
                         </div>
@@ -128,16 +121,6 @@ export const Footer = () => {
                 <div className="wrap wrap-px py-6">
                     <p className="my-0">
                         © {year} KezaKitchen. All rights reserved{" - "}
-                        {/* <span className="font-normal">
-                            A template by{" "}
-                            <Link
-                                className="transition-colors duration-300 hover:underline"
-                                href="https://chrstnl.com"
-                                target="_blank"
-                            >
-                                chrstnl.
-                            </Link>
-                        </span> */}
                     </p>
                 </div>
             </SectionContainer>
