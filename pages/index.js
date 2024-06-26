@@ -143,10 +143,10 @@ export default function Home() {
                                 width={1024}
                                 height={768}
                                 sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1024px"
-                                className="flex-none w-full md:w-auto"
+                                className="flex-none w-full md:w-1/2"
                             />
 
-                            <div className="flex flex-col space-y-4">
+                            <div className="flex flex-col space-y-4 w-full md:w-1/2">
                                 <BadgeGroup
                                     alignment="left"
                                     className="flex-none"
