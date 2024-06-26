@@ -9,6 +9,7 @@ import { Content } from "@components/Content";
 import { Accordion } from "@components/Accordion";
 import { MotionBTTContainer } from "@components/Motion";
 import SEO from "@components/SEO/SEO";
+import Image from 'next/image'
 import {
     CardBody,
     CardGroup,
@@ -136,11 +137,12 @@ export default function Home() {
                             id="testimonials"
                             className="benefits flex flex-col md:flex-row md:space-x-4"
                         >
-                            <img
+                            <Image
                                 src="/image.png"
-                                srcSet="/image.png 480w, /image.png 768w, /image.png 1024w"
-                                sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1024px"
                                 alt="Progress Tracking image used."
+                                width={1024}
+                                height={768}
+                                sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1024px"
                                 className="flex-none w-full md:w-auto"
                             />
 
