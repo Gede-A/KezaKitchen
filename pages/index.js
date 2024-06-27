@@ -159,7 +159,8 @@ export default function Home() {
                                         JOIN, IT&apos;S FREE
                                     </BadgeMessage>
                                 </BadgeGroup>
-                                <PageTitle className="" type="default">
+                                <div className = "m-12">
+                                    <PageTitle className="" type="default">
                                     We&apos;re not reinventing the taco
                                 </PageTitle>
                                 <p>
@@ -168,6 +169,7 @@ export default function Home() {
                                     Lots of companies do cash back. No one does
                                     it like us.
                                 </p>
+                                </div>
                             </div>
                         </SectionContainer>
                     </MotionBTTContainer>
