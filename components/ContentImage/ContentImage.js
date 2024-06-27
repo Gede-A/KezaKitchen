@@ -1,22 +1,32 @@
 import { SectionContainer } from "@components/Section";
 import { Icon } from "@iconify/react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { v4 as uuid } from "uuid";
 
 const ContentImageData = [
     {
         id: uuid(),
         title: "Effortless Planning",
-        content: "Say goodbye to meal planning stress! With NutriTrack, planning your meals becomes a breeze. Our user-friendly Notion template lets you create customized daily or weekly meal plans effortlessly. Enjoy a balanced and nutritious diet without the hassle.",
+        content:
+            "Say goodbye to meal planning stress! With NutriTrack, planning your meals becomes a breeze. Our user-friendly Notion template lets you create customized daily or weekly meal plans effortlessly. Enjoy a balanced and nutritious diet without the hassle.",
         align: "right",
         image: "/features1.png"
     },
     {
         id: uuid(),
         title: "Shopping List",
-        content: "We've got your grocery shopping covered! NutriTrack includes a handy shopping list feature. As you plan your meals, the template automatically generates a comprehensive shopping list. No more forgotten items or aimless wandering in the supermarket. Shopping for healthy ingredients has never been easier!",
+        content:
+            "We've got your grocery shopping covered! NutriTrack includes a handy shopping list feature. As you plan your meals, the template automatically generates a comprehensive shopping list. No more forgotten items or aimless wandering in the supermarket. Shopping for healthy ingredients has never been easier!",
         align: "left",
         image: "/features2.png"
+    },
+    {
+        id: uuid(),
+        title: "We&apos;re not reinventing the taco",
+        content:
+            "But we are reinventing how much money you can earn when you and your friends eat one. Lots of companies do cash back. No one does it like us.",
+        align: "right",
+        image: "/features1.png"
     }
 ];
 
@@ -27,11 +37,11 @@ export const ContentImage = () => {
                 <div
                     id={item.id}
                     key={item.id}
-                    className="process-item--container flex flex-col md:flex-row gap-8"
+                    className="process-item--container grid md:grid-cols-2 gap-y-8"
                 >
                     <div
-                        className={`process-item--image flex-1 rounded-3xl ${
-                            item.align === "left" ? "md:order-1 md:mr-8" : "md:ml-8"
+                        className={`process-item--image rounded-3xl ${
+                            item.align === "left" ? "md:order-1" : ""
                         }`}
                     >
                         <Image
@@ -44,9 +54,9 @@ export const ContentImage = () => {
                         />
                     </div>
                     <div
-                        className={`process-item--content flex-1 ${
+                        className={`process-item--content ${
                             item.align === "left"
-                                ? "pl-8 md:pr-16 lg:pr-24 xl:pr-32 ml-auto"
+                                ? "md:pr-16 lg:pr-24 xl:pr-32 ml-auto"
                                 : "md:pl-16 lg:pl-24 xl:pl-32 mr-auto"
                         } my-auto content text-black/60`}
                     >
@@ -77,5 +87,3 @@ export const ContentImage = () => {
         </SectionContainer>
     );
 };
-
-export default ContentImage;

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { SectionContainer } from "@components/Section";
 import { Nav } from "@components/Nav";
 import { ButtonGroup, Button } from "@components/Button";
@@ -19,18 +19,18 @@ export const Header = () => {
                                 src="/nutritrack.svg"
                                 alt="logo"
                                 className="h-6 w-auto"
-                                height={25}
-                                width={100}
+                                height="24"
+                                width="100"
                                 priority
-                                objectFit="contain"
                             />
                         </Link>
                     </h1>
                 </div>
+
                 <div className="flex items-center ml-auto">
                     <Nav />
-                    <ButtonGroup className="hidden md:block">
-                    </ButtonGroup>
+                    {/* <ButtonGroup className="hidden md:block">
+                    </ButtonGroup> */}
                 </div>
             </SectionContainer>
         </header>

@@ -11,7 +11,6 @@ const navigation = [
         name: "Contact",
         href: "https://kezakitchen.netlify.app/",
         isArrow: true
-        // target: "_blank"
     }
 ];
 
@@ -22,6 +21,7 @@ export const Nav = () => {
     const closeNav = () => {
         setIsNavOpen(false);
     };
+
     return (
         <nav className="header-nav">
             <div className="header-nav--container">

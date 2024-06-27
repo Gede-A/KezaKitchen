@@ -1,6 +1,6 @@
 import { SectionContainer } from "@components/Section";
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { ButtonGroup } from "@components/Button";
 import { Icon } from "@iconify/react";
 
@@ -27,23 +27,19 @@ const DATA = [
         items: [
             {
                 label: "About",
-                href: "#",
-                // target: "_blank"
+                href: "#"
             },
             {
                 label: "Twitter",
-                href: "#",
-                // target: "_blank"
+                href: "#"
             },
             {
                 label: "Instagram",
-                href: "#",
-                // target: "_blank"
+                href: "#"
             },
             {
                 label: "Facebook",
-                href: "#",
-                // target: "_blank"
+                href: "#"
             }
         ]
     }
@@ -66,15 +62,13 @@ export const Footer = () => {
                                         src="/nutritrack.svg"
                                         alt="logo"
                                         className="h-10 w-auto"
-                                        height={25}
-                                        width={100}
+                                        height="25"
+                                        width="100"
                                         priority
-                                        objectFit="contain"
                                     />
                                 </Link>
                                 {/* Get Template button; remove if not used */}
-                                <ButtonGroup alignment="left">
-                                </ButtonGroup>
+                                <ButtonGroup alignment="left"></ButtonGroup>
                             </div>
                         </div>
                         <div className="col-span-6">

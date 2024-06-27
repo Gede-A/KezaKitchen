@@ -129,7 +129,7 @@ export default function Home() {
                         </SectionContainer>
                     </MotionBTTContainer>
                     {/* Testimonials */}
-                    <MotionBTTContainer
+                    {/* <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                         className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mx-4"
                     >
@@ -148,7 +148,7 @@ export default function Home() {
                                 />
                             </div>
 
-                            <div className="flex flex-col space-y-4 w-full md:w-1/2 pl-16 pr-3">
+                            <div className="flex flex-col space-y-1 w-full md:w-1/2 pl-16 pr-3">
                                 <BadgeGroup
                                     alignment="left"
                                     className="flex-none"
@@ -168,7 +168,7 @@ export default function Home() {
                                 </p>
                             </div>
                         </SectionContainer>
-                    </MotionBTTContainer>
+                    </MotionBTTContainer> */}
 
                     {/* Accordions */}
                     <MotionBTTContainer
