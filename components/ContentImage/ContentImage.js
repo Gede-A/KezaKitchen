@@ -46,7 +46,7 @@ export const ContentImage = () => {
                     <div
                         className={`process-item--content flex-1 ${
                             item.align === "left"
-                                ? "md:pr-16 lg:pr-24 xl:pr-32 ml-auto"
+                                ? "pl-8 md:pr-16 lg:pr-24 xl:pr-32 ml-auto"
                                 : "md:pl-16 lg:pl-24 xl:pl-32 mr-auto"
                         } my-auto content text-black/60`}
                     >

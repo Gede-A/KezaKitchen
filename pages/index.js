@@ -137,20 +137,18 @@ export default function Home() {
                             id="testimonials"
                             className="benefits flex flex-col md:flex-row md:space-x-4"
                         >
-                            <div className="flex-none w-full md:w-1/2">
-                                <div className="mr-12">
-                                    <Image
-                                        src="/image.png"
-                                        alt="Progress Tracking image used."
-                                        width={1024}
-                                        height={768}
-                                        sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1024px"
-                                        className="w-full"
-                                    />
-                                </div>
+                            <div className="flex-none w-full md:w-1/2 pl-7 pr-16">
+                                <Image
+                                    src="/image.png"
+                                    alt="Progress Tracking image used."
+                                    width={1024}
+                                    height={768}
+                                    sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1024px"
+                                    className="w-full"
+                                />
                             </div>
 
-                            <div className="flex flex-col space-y-4 w-full md:w-1/2 ml-12">
+                            <div className="flex flex-col space-y-4 w-full md:w-1/2 pl-16 pr-3">
                                 <BadgeGroup
                                     alignment="left"
                                     className="flex-none"
