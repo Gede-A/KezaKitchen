@@ -150,7 +150,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col space-y-4 w-full md:w-1/2">
+                            <div className="flex flex-col space-y-4 w-full md:w-1/2 m-12">
                                 <BadgeGroup
                                     alignment="left"
                                     className="flex-none"
@@ -159,7 +159,6 @@ export default function Home() {
                                         JOIN, IT&apos;S FREE
                                     </BadgeMessage>
                                 </BadgeGroup>
-                                <div className = "m-12">
                                     <PageTitle className="" type="default">
                                     We&apos;re not reinventing the taco
                                 </PageTitle>
@@ -169,7 +168,7 @@ export default function Home() {
                                     Lots of companies do cash back. No one does
                                     it like us.
                                 </p>
-                                </div>
+                                
                             </div>
                         </SectionContainer>
                     </MotionBTTContainer>
