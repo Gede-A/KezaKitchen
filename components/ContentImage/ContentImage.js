@@ -22,7 +22,7 @@ const ContentImageData = [
     },
     {
         id: uuid(),
-        title: "We&apos;re not reinventing the taco",
+        title: "We're not reinventing the taco",
         content:
             "But we are reinventing how much money you can earn when you and your friends eat one. Lots of companies do cash back. No one does it like us.",
         align: "right",
