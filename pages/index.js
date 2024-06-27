@@ -9,7 +9,7 @@ import { Content } from "@components/Content";
 import { Accordion } from "@components/Accordion";
 import { MotionBTTContainer } from "@components/Motion";
 import SEO from "@components/SEO/SEO";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import {
     CardBody,
     CardGroup,
