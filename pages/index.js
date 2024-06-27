@@ -9,7 +9,7 @@ import { Content } from "@components/Content";
 import { Accordion } from "@components/Accordion";
 import { MotionBTTContainer } from "@components/Motion";
 import SEO from "@components/SEO/SEO";
-import Image from 'next/image'
+import Image from "next/image";
 import {
     CardBody,
     CardGroup,
@@ -131,20 +131,24 @@ export default function Home() {
                     {/* Testimonials */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
-                        className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4"
+                        className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mx-4"
                     >
                         <SectionContainer
                             id="testimonials"
                             className="benefits flex flex-col md:flex-row md:space-x-4"
                         >
-                            <Image
-                                src="/image.png"
-                                alt="Progress Tracking image used."
-                                width={1024}
-                                height={768}
-                                sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1024px"
-                                className="flex-none w-full md:w-1/2"
-                            />
+                            <div className="flex-none w-full md:w-1/2">
+                                <div className="mr-12">
+                                    <Image
+                                        src="/image.png"
+                                        alt="Progress Tracking image used."
+                                        width={1024}
+                                        height={768}
+                                        sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1024px"
+                                        className="w-full"
+                                    />
+                                </div>
+                            </div>
 
                             <div className="flex flex-col space-y-4 w-full md:w-1/2">
                                 <BadgeGroup
